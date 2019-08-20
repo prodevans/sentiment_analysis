@@ -12,9 +12,9 @@ RUN pip install -r /app/requirements.txt
 
 RUN pip install --upgrade google-api-python-client 
 
-ENTRYPOINT ["python"]
+# ENTRYPOINT ["python"]
 
-CMD ["app.py"]
+# CMD ["app.py"]
 
 CMD ["python", "/app/app.py"]
 
