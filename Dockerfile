@@ -1,6 +1,6 @@
 FROM python
 
-EXPOSE 8050
+EXPOSE 8050 8080
 
 COPY . /app
 
