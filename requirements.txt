@@ -1,0 +1,14 @@
+Flask
+Numpy
+Pandas
+werkzeug.utils
+Os
+csv
+sklearn
+pickle
+pytorch
+PIL
+json
+html
+css
+javascript

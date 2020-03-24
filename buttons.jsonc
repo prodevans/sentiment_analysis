@@ -1,0 +1,9 @@
+{
+    "buttons": [
+        {
+            "name": "Final Deployment",
+            "script": " static\\deploy.bat",
+            "description": "Final deployment"
+        }
+    ]
+}
