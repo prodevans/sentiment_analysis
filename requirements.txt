@@ -1,8 +1,7 @@
-Python
 Flask
 Numpy
 Pandas
-werkzeug.utils
+Werkzeug
 Os
 csv
 sklearn
