@@ -1,6 +1,8 @@
-FROM python
+FROM centos:7
 
 USER root
+#Downloading visual studio code server
+RUN yum install python3 wget -y
 
 EXPOSE 8080
 
@@ -8,16 +10,16 @@ COPY . /app
 
 WORKDIR /app
 
-RUN yum group install "Development Tools"
+RUN yum group install "Development Tools" -y
 
-RUN yum install man-pages
+RUN yum install man-pages -y
 
 RUN gcc --version 
 
-RUN python -m pip install --upgrade pip
+# RUN python -m pip install --upgrade pip
 
-RUN pip install -r /app/requirements.txt
+RUN pip3 install -r /app/requirements.txt
 
-RUN pip install --upgrade google-api-python-client 
+RUN pip3 install --upgrade google-api-python-client 
 
-CMD ["python", "/app/analysis.py"]
+CMD ["python3", "/app/analysis.py"]
