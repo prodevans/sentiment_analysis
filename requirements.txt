@@ -5,7 +5,5 @@ Werkzeug
 python-csv
 sklearn
 pickle-mixin
-pytorch
 pillow
-jsonlib
 d2
